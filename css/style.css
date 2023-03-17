@@ -97,10 +97,10 @@ h3{
      
 }
 
-.inicio .publicidad1 .contenido h2{
+/*.inicio .publicidad1 .contenido h2{
     
     
-}
+}*/
 /*FOOTER*/
 .footer{
     display: flex;
@@ -245,9 +245,9 @@ h3{
     } 
 }
 @media(max-width:480px){
-    .formulario, {
+    .formulario{
         width: auto;
-        margin: 40px 0px;
+        margin: backdrop 40px 0px;
         border-radius: none;
         justify-content: auto;
         background-color: rgb(99, 103, 138);
