@@ -46,19 +46,22 @@
     font-size: 64px;
     text-shadow: 6px 6px 10px white;
 }
-.portada .titulo {
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 300;
-    font-size: 4rem;
-   
-}  
-   
-.portada  .titulo .titulo1{
+.portada  h1  {
     font-family: 'Michroma', sans-serif;
     font-weight: 900;
+    font-size: 6rem;
+   
+}  
+.portada h5{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 300;
     letter-spacing: 2px;
 }
-    
+ 
+h3{
+    font-family: 'Michroma', sans-serif;
+}
+
 /*INSIGNIA*/
 .insignia{
     width: 100%;
@@ -81,7 +84,7 @@
 }
 .inicio .publicidad1 .contenido{
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: 50px;
     width: 400px;
     height: auto;
@@ -90,10 +93,13 @@
     padding: 10px;
     color:  rgb(47, 81, 119);
     font-size: 20px;
-    font-family:'Kanit', sans-serif ;
-   
-    
+    font-family: 'Michroma', sans-serif;
+     
+}
 
+.inicio .publicidad1 .contenido h2{
+    
+    
 }
 /*FOOTER*/
 .footer{
@@ -111,7 +117,7 @@
 }
 .footerList{
     list-style-type: none;
-    font-family:'Kanit', sans-serif ; 
+    font-family: 'Michroma', sans-serif;
 }
 
 /*formulario*/
@@ -132,7 +138,7 @@
                              "nosocio   nosocio"
                             "enviar    enviar";
    
-    font-family:'Kanit', sans-serif ;
+     font-family: 'Michroma', sans-serif;
 }
 .formulario label{
     display: flex;
@@ -188,6 +194,7 @@
     padding: 10px;
     border: none;
     border-radius: 10px;
+    font-family: 'Michroma', sans-serif;
 }
 
 /*.mapa{
@@ -234,7 +241,7 @@
                                 "nosocio"
                                 "enviar";
        
-        font-family:'Kanit', sans-serif ;
+ font-family: 'Michroma', sans-serif;
     } 
 }
 @media(max-width:480px){
@@ -254,12 +261,13 @@
                                  "socio"
                                 "nosocio"
                                 "enviar";
-       
-        font-family:'Kanit', sans-serif ;
+        font-family: 'Michroma', sans-serif;
     }
+            
+}
     
 
-}
+
 
 
 
