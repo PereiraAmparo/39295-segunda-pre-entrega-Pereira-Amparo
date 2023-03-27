@@ -283,6 +283,10 @@
 }
 
 @media(max-width:768px){
+    .publicidad1{
+        width: 97%;
+        margin-left: 1px;
+    }
     .perritosol{
         width: fit-content;
     }
@@ -367,6 +371,9 @@
     }
 }
 @media(max-width:480px){
+    .publicidad1{
+        width: 95%;
+    }
     .perritosol{
         height: fit-content;
         width: auto;
