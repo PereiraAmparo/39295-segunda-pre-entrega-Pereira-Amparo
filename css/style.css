@@ -119,8 +119,8 @@
   
 }
 .insignia{
-    width: fit-content;
-    height: fit-content;
+    width: 100% ;
+    height: auto;
     object-fit: cover;
     background-color: white;
     position: relative;
@@ -282,39 +282,31 @@
 
 }
 
-@media(max-width:768x){
-    
-
+@media(max-width:768px){
+    .perritosol{
+        width: fit-content;
+    }
     .formulario{
-        
         width: auto;
-        margin: 40px 40px;
-        border-radius: none;
-        justify-content: auto;
-        grid-template-columns: 1fr;
-        
-      
-            grid-template-areas: "nombre"
-                                 "apellido"
-                                 "edad"
-                                 "cedula"
-                                 "mail"
-                                 "mensaje"
-                                 "socio"
-                                "nosocio"
-                                "enviar";
-       
+        margin: backdrop 40px auto;
+        grid-template-columns: 1fr;             
+        grid-template-areas: "nombre"
+                             "apellido"
+                             "edad"
+                             "cedula"
+                             "mail"
+                             "mensaje"
+                             "socio"
+                            "nosocio"
+                            "enviar";
         font-family: 'Michroma', sans-serif;
-    } 
+    }
     .formulario button{
-        grid-area: enviar;
         font-size: large;
         margin: auto;
         padding: 10px;
-        border: none;
-        border-radius: 10px;
-        font-family: 'Michroma', sans-serif;
     }
+   
     .footer{
         display: flex;
         justify-content: space-between;
@@ -340,6 +332,7 @@
 
 
 @media(max-width:550px){
+
     .navegador .fa-bars{
         display: block;
         font-size: 40px;
@@ -374,6 +367,10 @@
     }
 }
 @media(max-width:480px){
+    .perritosol{
+        height: fit-content;
+        width: auto;
+    }
     .formulario{
         width: auto;
         margin: backdrop 0px 0px;
