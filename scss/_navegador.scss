@@ -1,0 +1,70 @@
+/*NAVEGADOR*/
+.ubiquense{
+    .navegador{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        margin-top: 10px;
+
+    .barra{ 
+        gap: 20px ;
+    }
+
+    .logo{
+        border-radius: 50%;
+        padding: 5px;
+        width: 80px ;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 50%;
+        padding: 5px;
+        margin: 10px;
+
+    }
+
+    .menu{
+        padding-block: 20px;
+        & :hover{
+             background-color:$bg-color3 ;
+     }
+    }
+    
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+     
+        li a{
+            font-family: 'Michroma', sans-serif;
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 10px 5px;
+            background-color: $bg-color2; 
+         }
+    }
+
+         .fa-bars{
+            display: none;
+         }
+     }
+    
+}   
+    
+
+ 
+
+.navegador1{
+    background-color: $bg-color2;
+
+}
+.nabar{
+    .insignia{
+     background-color:$bg-color1;
+    }
+
+}
+ 

@@ -1,16 +1,3 @@
-@import "variables";
-@import "reset";
-@import "navegador";
-@import "portada";
-@import "insignia";
-@import "footer";
-@import "formulario";
-@import "video";
-@import "nosotros";
-@import "productos";
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bebas+Neue&family=Michroma&family=Orbitron:wght@600;700;900&display=swap');
-
 @media(max-width:768px){
     .publicidad1{
         width: 97%;
@@ -33,19 +20,19 @@
                             "nosocio"
                             "enviar";
         font-family: 'Michroma', sans-serif;
-    }
-    .formulario button{
-        font-size: large;
-        margin: auto;
-        padding: 10px;
+    
+        button{
+            font-size: large;
+            margin: auto;
+            padding: 10px;
     }
    
     .footer{
         display: flex;
         justify-content: space-between;
         width: auto;
-        background-color:rgb(69, 68, 68);
-        color: rgb(179, 193, 207);
+        background-color:$bg-color3;
+        color: $bg-color4;
         margin: 20px;
         padding: 10px;
         gap: 30px;
@@ -66,37 +53,44 @@
 
 @media(max-width:550px){
 
-    .ubiquense .navegador .fa-bars{
+    .navegador .fa-bars{
         display: block;
         font-size: 40px;
         margin: 10px;
-        color: rgb(69, 68, 68) ;
+        color: $bg-color3 ;
     
-    }
-    .ubiquense .navegador .fa-bars:hover + ul{
-        right: 0;
-    }
-    .ubiquense .navegador ul:hover{
-        right: 0;
-    }
-    .ubiquense .navegador .responsive{
-        right: -350px;
-        top: 0;
-        position: fixed;
-        width: 250px;
-        height: 100vh;
-        z-index: 5;
-        flex-direction: column;
-        justify-content: start;
-        background-color: grey;
-    }
-    .ubiquense .navegador ul li{
-        width: 50%
-    }
-    .ubiquense .navegador ul li a{
-        background-color: grey;
-        padding: 0px;
-        height: 10%;
+    
+         .fa-bars:hover + ul{
+            right: 0;
+         }
+    
+         ul:hover{
+            right: 0;
+         }
+    
+        .responsive{
+            right: -350px;
+            top: 0;
+            position: fixed;
+            width: 250px;
+            height: 100vh;
+            z-index: 5;
+            flex-direction: column;
+            justify-content: start;
+            background-color: grey;
+        }
+    
+         ul{
+            li{
+                width: 50%
+    
+                 a{
+                    background-color: grey;
+                    padding: 0px;
+                    height: 10%;
+                 }
+            }  
+         }
     }
 }
 @media(max-width:480px){
@@ -124,9 +118,9 @@
                                 "nosocio"
                                 "enviar";
         font-family: 'Michroma', sans-serif;
-    }
     
-    .formulario button{
+    
+     button{
         grid-area: enviar;
         font-size: large;
         margin: auto;
@@ -134,13 +128,14 @@
         border: none;
         border-radius: 10px;
         font-family: 'Michroma', sans-serif;
+     }
     }
     .footer{
         display: flex;
         justify-content: space-between;
         width: auto;
-        background-color:rgb(69, 68, 68);
-        color: rgb(179, 193, 207);
+        background-color:$bg-color3;
+        color:$bg-color4;
         margin: 20px;
         padding: 10px;
         gap: 30px;
@@ -151,39 +146,35 @@
     .center1{
         width: 15%;
     }
-    .navegador .fa-bars{
-        display: block;
-        font-size: 40px;
-        margin: 10px;
-        color: rgb(69, 68, 68) ;
+    .navegador {
+        .fa-bars{
+            display: block;
+            font-size: 40px;
+            margin: 10px;
+            color: $bg-color3 ;
+        }
+
+        .ul{
+            display: none;
+        }
     
     }
-    .container .insignia{
-        width:auto;
-    }
-    .portada h1{
-        font-family: 'Michroma', sans-serif;
-        font-weight: 400;
-        font-size: 32px;
-        align-items: center;
-    }
-       
-}
-
-
-    
-
-
-
-
-
-
-
-
-
+    .container{
+         .insignia{
+            width:auto;
+         }
 
         
-    
-
-       
-
+         
+         
+    }
+    .portada{
+        h1{
+            font-family: 'Michroma', sans-serif;
+            font-weight: 400;
+            font-size: 32px;
+            align-items: center;
+        }
+    }
+}
+}

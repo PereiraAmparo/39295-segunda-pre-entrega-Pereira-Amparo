@@ -1,0 +1,74 @@
+.formulario{
+    width: 70%;
+    margin: 40px auto;
+    border-radius: 5%;
+    background-color: $bg-color2;
+    display: grid;
+    
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+  
+        grid-template-areas: "nombre    apellido"
+                             "edad      cedula"
+                             "mail      mail"
+                             "mensaje   mensaje"
+                             "socio     socio"
+                             "nosocio   nosocio"
+                            "enviar    enviar";
+   
+     font-family: 'Michroma', sans-serif;
+
+    label{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        margin: 20px;
+        padding: 10px;
+        font-size: 20px;
+    }
+    :nth-child(1){
+        grid-area: nombre;
+        padding: 10px;
+    }
+    :nth-child(2){
+        grid-area: apellido;
+    }
+    :nth-child(3){
+        grid-area: edad;
+    }
+    :nth-child(4){
+        grid-area: cedula;
+    }
+    :nth-child(5){
+        grid-area: mail;
+    }
+    :nth-child(6){
+        grid-area: socio;
+    }
+    :nth-child(7){
+        grid-area: nosocio;
+    }
+    :nth-child(8){
+        grid-area: mensaje;
+    }
+    button{
+        grid-area: enviar;
+        font-size: 70%;
+        margin: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-family: 'Michroma', sans-serif;
+    }
+
+
+               
+}
+
+.formulario label input, .formulario label textarea{
+    background-color: $bg-color2;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+    

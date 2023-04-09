@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.605);
+    font-family: 'Michroma', sans-serif;
+    font-size: 12px;
+}
+.fondo{
+    background-color:$bg-color1 ;
+    
+}
+.row,.container,.container-fluid{
+    margin: 0;
+    padding: 0;
+}

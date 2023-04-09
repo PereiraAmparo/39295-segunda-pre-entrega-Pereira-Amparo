@@ -15,6 +15,11 @@
   background-color: rgb(171, 189, 230);
 }
 
+.row, .container, .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
 /*NAVEGADOR*/
 .ubiquense .navegador {
   display: flex;
@@ -47,7 +52,7 @@
   justify-content: end;
   gap: 10px;
 }
-.ubiquense .navegador li a {
+.ubiquense .navegador ul li a {
   font-family: "Michroma", sans-serif;
   display: block;
   text-decoration: none;
@@ -56,7 +61,7 @@
   padding: 10px 5px;
   background-color: rgb(79, 118, 161);
 }
-.ubiquense .fa-bars {
+.ubiquense .navegador .fa-bars {
   display: none;
 }
 
@@ -72,7 +77,7 @@
 .portada {
   color: black;
   text-align: center;
-  background-color: rgb(79, 118, 161);
+  background: rgb(79, 118, 161);
   font-size: 64px;
   text-shadow: 6px 6px 10px white;
 }
@@ -238,10 +243,76 @@ img {
 }
 
 .video {
+  max-width: 100%;
+  height: auto;
   text-align: center;
   margin: 5px 2.5%;
   padding: 5px 2.5%;
   border: 5px rgb(79, 118, 161) solid;
+}
+
+.imagenNosotros {
+  max-width: 10%;
+}
+
+.divNosotros {
+  border-style: solid;
+  border-color: rgb(79, 118, 161);
+  padding: 10px;
+  margin: 40px;
+  box-shadow: 5px 5px 15px 5px #000000;
+  border-radius: 5%;
+  -webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.anim1 {
+  animation-delay: 1.5 s;
+}
+
+.anim2 {
+  animation-delay: 3 s;
+}
+
+.anim3 {
+  animation-delay: 4.5 s;
+}
+
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+    transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+    transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+.carousel {
+  width: 350px;
+  height: 50%;
 }
 
 @media (max-width: 768px) {
@@ -264,7 +335,7 @@ img {
     margin: auto;
     padding: 10px;
   }
-  .formulario .footer {
+  .footer {
     display: flex;
     justify-content: space-between;
     width: auto;
@@ -276,27 +347,27 @@ img {
     letter-spacing: 2px;
     text-align: center;
   }
-  .formulario .center1 {
+  .center1 {
     width: 15%;
   }
-  .formulario .container .insignia {
+  .container .insignia {
     width: auto;
   }
 }
-@media (max-width: 768px) and (max-width: 550px) {
-  .navegador .fa-bars {
+@media (max-width: 550px) {
+  .ubiquense .navegador .fa-bars {
     display: block;
     font-size: 40px;
     margin: 10px;
     color: rgb(69, 68, 68);
   }
-  .navegador .fa-bars .fa-bars:hover + ul {
+  .ubiquense .navegador .fa-bars:hover + ul {
     right: 0;
   }
-  .navegador .fa-bars ul:hover {
+  .ubiquense .navegador ul:hover {
     right: 0;
   }
-  .navegador .fa-bars .responsive {
+  .ubiquense .navegador .responsive {
     right: -350px;
     top: 0;
     position: fixed;
@@ -307,14 +378,16 @@ img {
     justify-content: start;
     background-color: grey;
   }
-  .navegador .fa-bars ul li {
-    width: 50% a;
-    width-background-color: grey;
-    width-padding: 0px;
-    width-height: 10%;
+  .ubiquense .navegador ul li {
+    width: 50%;
+  }
+  .ubiquense .navegador ul li a {
+    background-color: grey;
+    padding: 0px;
+    height: 10%;
   }
 }
-@media (max-width: 768px) and (max-width: 480px) {
+@media (max-width: 480px) {
   .publicidad1 {
     width: 95%;
   }
