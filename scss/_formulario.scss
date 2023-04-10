@@ -1,6 +1,10 @@
+@mixin MarPad ($margen, $padding){
+    margin: $margen;
+    padding: $padding;
+}
 .formulario{
+    @include MarPad(40px auto, 0px);
     width: 70%;
-    margin: 40px auto;
     border-radius: 5%;
     background-color: $bg-color2;
     display: grid;
@@ -19,16 +23,15 @@
      font-family: 'Michroma', sans-serif;
 
     label{
+        @include MarPad(20px, 10px);
         display: flex;
         flex-direction: column;
         color: white;
-        margin: 20px;
-        padding: 10px;
         font-size: 20px;
     }
     :nth-child(1){
+        @include MarPad(0px,40px);
         grid-area: nombre;
-        padding: 10px;
     }
     :nth-child(2){
         grid-area: apellido;
@@ -52,10 +55,9 @@
         grid-area: mensaje;
     }
     button{
+        @include MarPad(30px,10px);
         grid-area: enviar;
         font-size: 70%;
-        margin: 20px;
-        padding: 10px;
         border: none;
         border-radius: 10px;
         font-family: 'Michroma', sans-serif;
@@ -66,9 +68,9 @@
 }
 
 .formulario label input, .formulario label textarea{
+    @include MarPad(0px,10px);
     background-color: $bg-color2;
     border: none;
     border-bottom: 1px solid white;
-    padding: 10px;
 }
     

@@ -182,8 +182,9 @@ img {
 }
 
 .formulario {
-  width: 70%;
   margin: 40px auto;
+  padding: 0px;
+  width: 70%;
   border-radius: 5%;
   background-color: rgb(79, 118, 161);
   display: grid;
@@ -193,16 +194,17 @@ img {
   font-family: "Michroma", sans-serif;
 }
 .formulario label {
+  margin: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   color: white;
-  margin: 20px;
-  padding: 10px;
   font-size: 20px;
 }
 .formulario :nth-child(1) {
+  margin: 0px;
+  padding: 40px;
   grid-area: nombre;
-  padding: 10px;
 }
 .formulario :nth-child(2) {
   grid-area: apellido;
@@ -226,20 +228,21 @@ img {
   grid-area: mensaje;
 }
 .formulario button {
+  margin: 30px;
+  padding: 10px;
   grid-area: enviar;
   font-size: 70%;
-  margin: 20px;
-  padding: 10px;
   border: none;
   border-radius: 10px;
   font-family: "Michroma", sans-serif;
 }
 
 .formulario label input, .formulario label textarea {
+  margin: 0px;
+  padding: 10px;
   background-color: rgb(79, 118, 161);
   border: none;
   border-bottom: 1px solid white;
-  padding: 10px;
 }
 
 .video {
@@ -267,15 +270,15 @@ img {
 }
 
 .anim1 {
-  animation-delay: 1.5 s;
+  animation-delay: 1.5s;
 }
 
 .anim2 {
-  animation-delay: 3 s;
+  animation-delay: 3s;
 }
 
 .anim3 {
-  animation-delay: 4.5 s;
+  animation-delay: 4.5s;
 }
 
 @-webkit-keyframes slide-in-elliptic-top-fwd {
@@ -310,9 +313,9 @@ img {
     opacity: 1;
   }
 }
-.carousel {
-  width: 350px;
-  height: 50%;
+.prodImg {
+  max-height: 2100px;
+  width: 35%;
 }
 
 @media (max-width: 768px) {

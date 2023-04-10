@@ -17,7 +17,7 @@
 }
 @for $divNosotros from 1 through 3 {
     .anim#{$divNosotros} {
-        animation-delay: $divNosotros*1.5       s;
+        animation-delay: $divNosotros*1.5s;
     }
 }
  @-webkit-keyframes slide-in-elliptic-top-fwd {
