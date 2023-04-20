@@ -30,7 +30,6 @@
         font-size: 20px;
     }
     :nth-child(1){
-        @include MarPad(0px,40px);
         grid-area: nombre;
     }
     :nth-child(2){

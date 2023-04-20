@@ -103,12 +103,20 @@
     .publicidad1{
         width: 95%;
     }
+    .publicidad1 a img{
+        margin: 20px 13.5px;
+    }
+    .contenido{ 
+        max-width: 80%;
+        font-size: 75%;
+    }
     .perritosol{
         height: fit-content;
         width: auto;
     }
     .formulario{
-        width: auto;
+        width: 100%;
+        padding: 0px;
         margin: backdrop 0px 0px;
         border-radius: none;
         justify-content: auto;
@@ -125,7 +133,10 @@
                                 "enviar";
         font-family: 'Michroma', sans-serif;
     }
-    
+    .formulario label{
+        max-width: 100%;
+        font-size: medium;
+    }
     .formulario button{
         grid-area: enviar;
         font-size: large;
@@ -141,12 +152,18 @@
         width: auto;
         background-color:rgb(69, 68, 68);
         color: rgb(179, 193, 207);
-        margin: 20px;
+        margin: 0px;
         padding: 10px;
         gap: 30px;
         letter-spacing: 2px;
         text-align: center;
        
+    }
+    .footerList{
+        font-size: x-small;
+    }
+    .footerContainer{
+        margin: auto;
     }
     .center1{
         width: 15%;
@@ -166,6 +183,9 @@
         font-weight: 400;
         font-size: 32px;
         align-items: center;
+    }
+    .nosotrosNombre{
+        font-size: 10vh;
     }
        
 }
