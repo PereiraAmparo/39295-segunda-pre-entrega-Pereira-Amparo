@@ -14,11 +14,14 @@
         padding-block: 10px;
  
 }
+
           
 /*INICIO*/
 .inicio 
     .publicidad1{
          position: relative;
+         box-shadow:  0px 5px 10px rgba(15, 15, 15, .5);
+         max-width: 100%;
 }
 
      img{
@@ -26,7 +29,7 @@
         height: 400px;
         object-fit: cover;
         border-radius: 5%;
-        margin-top: 20px;
+        /*margin-top: 20px;*/
 }
     .contenido{
         position: absolute;
@@ -43,6 +46,10 @@
         background-color: rgba(0, 0, 0, 0.458);
         border-radius: 30%;
         text-align: center;
+        /*& :hover{
+            color: $bg-color5;
+        }*/
+       
         
      
 }

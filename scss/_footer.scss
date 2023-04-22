@@ -8,12 +8,20 @@
     gap: 30px;
     letter-spacing: 2px;
     text-align: center;
+    margin-top: 20px;
+
+        
+    
 
     .redes{
         align-items: end;
         gap: 10px;
         padding-block: 20px ;
         font-size: 30px;
+        &  :hover{
+            background-color:$bg-color1;
+            border-radius: 20px;
+        }
     }
 
     .container{
@@ -32,8 +40,12 @@
     
  
 .publicidad1{
+    a{
+        text-decoration: none;
+        color: $bg-color4;
+    }
     a img{
-         margin: 20px;
+         margin: 20px 0px 20px 0px;
     }
 }
 .center{

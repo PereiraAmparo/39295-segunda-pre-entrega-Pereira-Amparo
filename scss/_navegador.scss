@@ -11,6 +11,7 @@
     }
 
     .logo{
+        
         border-radius: 50%;
         padding: 5px;
         width: 80px ;
@@ -19,9 +20,11 @@
         border-radius: 50%;
         padding: 5px;
         margin: 10px;
+        -webkit-animation:rotate-center .6s ease-in-out both;
+        animation:rotate-center .6s ease-in-out both}
 
     }
-
+    @-webkit-keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes rotate-center{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}
     .menu{
         padding-block: 20px;
         & :hover{
@@ -52,7 +55,7 @@
          }
      }
     
-}   
+
     
 
  
@@ -67,4 +70,6 @@
     }
 
 }
- 
+
+
+

@@ -12,7 +12,7 @@
 }
 
 .fondo {
-  background-color: rgb(171, 189, 230);
+  background-color: rgb(198, 202, 223);
 }
 
 .row, .container, .container-fluid {
@@ -39,47 +39,69 @@
   border-radius: 50%;
   padding: 5px;
   margin: 10px;
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
 }
-.ubiquense .navegador .menu {
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.ubiquense .menu {
   padding-block: 20px;
 }
-.ubiquense .navegador .menu :hover {
+.ubiquense .menu :hover {
   background-color: rgb(69, 68, 68);
 }
-.ubiquense .navegador ul {
+.ubiquense ul {
   list-style: none;
   display: flex;
   justify-content: end;
   gap: 10px;
 }
-.ubiquense .navegador ul li a {
+.ubiquense ul li a {
   font-family: "Michroma", sans-serif;
   display: block;
   text-decoration: none;
   color: white;
   font-size: 16px;
   padding: 10px 5px;
-  background-color: rgb(79, 118, 161);
+  background-color: rgb(3, 74, 216);
 }
-.ubiquense .navegador .fa-bars {
+.ubiquense .fa-bars {
   display: none;
 }
 
 .navegador1 {
-  background-color: rgb(79, 118, 161);
+  background-color: rgb(3, 74, 216);
 }
 
 .nabar .insignia {
-  background-color: rgb(171, 189, 230);
+  background-color: rgb(198, 202, 223);
 }
 
 /*PORTADA*/
 .portada {
-  color: black;
+  color: rgb(227, 222, 222);
   text-align: center;
-  background: rgb(79, 118, 161);
+  background: rgb(3, 74, 216);
   font-size: 64px;
-  text-shadow: 6px 6px 10px white;
+  text-shadow: 6px 6px 10px rgb(9, 9, 9);
 }
 
 h1 {
@@ -93,6 +115,7 @@ h2 {
   font-family: "Bebas Neue", cursive;
   font-weight: 300;
   letter-spacing: 2px;
+  margin-bottom: 0px;
 }
 
 h3 {
@@ -119,6 +142,8 @@ h3 {
 /*INICIO*/
 .inicio .publicidad1 {
   position: relative;
+  box-shadow: 0px 5px 10px rgba(15, 15, 15, 0.5);
+  max-width: 100%;
 }
 
 img {
@@ -126,7 +151,7 @@ img {
   height: 400px;
   object-fit: cover;
   border-radius: 5%;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 
 .contenido {
@@ -144,6 +169,9 @@ img {
   background-color: rgba(0, 0, 0, 0.458);
   border-radius: 30%;
   text-align: center;
+  /*& :hover{
+      color: $bg-color5;
+  }*/
 }
 
 /*FOOTER*/
@@ -155,12 +183,17 @@ img {
   gap: 30px;
   letter-spacing: 2px;
   text-align: center;
+  margin-top: 20px;
 }
 .footer .redes {
   align-items: end;
   gap: 10px;
   padding-block: 20px;
   font-size: 30px;
+}
+.footer .redes :hover {
+  background-color: rgb(198, 202, 223);
+  border-radius: 20px;
 }
 .footer .container {
   display: flex;
@@ -173,8 +206,12 @@ img {
   font-family: "Michroma", sans-serif;
 }
 
+.publicidad1 a {
+  text-decoration: none;
+  color: rgb(179, 193, 207);
+}
 .publicidad1 a img {
-  margin: 20px;
+  margin: 20px 0px 20px 0px;
 }
 
 .center {
@@ -186,7 +223,7 @@ img {
   padding: 0px;
   width: 70%;
   border-radius: 5%;
-  background-color: rgb(79, 118, 161);
+  background-color: rgb(3, 74, 216);
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
@@ -238,7 +275,7 @@ img {
 .formulario label input, .formulario label textarea {
   margin: 0px;
   padding: 10px;
-  background-color: rgb(79, 118, 161);
+  background-color: rgb(3, 74, 216);
   border: none;
   border-bottom: 1px solid white;
 }
@@ -247,9 +284,10 @@ img {
   max-width: 100%;
   height: auto;
   text-align: center;
-  margin: 5px 2.5%;
-  padding: 5px 2.5%;
-  border: 5px rgb(79, 118, 161) solid;
+  margin: 10px 5%;
+  padding: 10px 5%;
+  border: 5px rgb(3, 74, 216) solid;
+  margin-top: 40px;
 }
 
 .imagenNosotros {
@@ -258,7 +296,7 @@ img {
 
 .divNosotros {
   border-style: solid;
-  border-color: rgb(79, 118, 161);
+  border-color: rgb(3, 74, 216);
   padding: 10px;
   margin: 40px;
   box-shadow: 5px 5px 15px 5px #000000;
@@ -316,10 +354,34 @@ img {
   width: 35%;
 }
 
+.btn-wsp {
+  position: fixed;
+  width: 120px;
+  height: 120px;
+  line-height: 80px;
+  bottom: 40px;
+  right: 20px;
+  z-index: 2;
+}
+.btn-wsp :hover {
+  background: rgba(255, 255, 255, 0.6078431373);
+  border-radius: 5px;
+}
+
+.banner {
+  box-shadow: 5px 5px 15px 5px #000000;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: none;
+}
+
 @media (max-width: 768px) {
+  .menu {
+    width: 50%;
+  }
   .publicidad1 {
-    width: 97%;
-    margin-left: 1px;
+    width: 100%;
+    margin-left: 0px;
   }
   .perritosol {
     width: fit-content;
@@ -342,17 +404,32 @@ img {
     width: auto;
     background-color: rgb(69, 68, 68);
     color: rgb(179, 193, 207);
-    margin: 20px;
+    margin: 0px;
     padding: 10px;
     gap: 30px;
     letter-spacing: 2px;
     text-align: center;
+  }
+  .footerContainer {
+    margin: auto;
   }
   .center1 {
     width: 15%;
   }
   .container .insignia {
     width: auto;
+  }
+  .prodImg {
+    width: 60vh;
+  }
+  .banner {
+    height: 67vh;
+  }
+  .btn-wsp {
+    width: 12vh;
+    height: 12vh;
+    right: 2%;
+    bottom: 6vh;
   }
 }
 @media (max-width: 550px) {
@@ -388,12 +465,20 @@ img {
     height: 10%;
   }
 }
+html, body {
+  overflow-x: hidden;
+}
+
 @media (max-width: 480px) {
+  .banner {
+    height: 20%;
+  }
   .publicidad1 {
-    width: 95%;
+    width: 100%;
+    margin-left: 0px;
   }
   .publicidad1 a img {
-    margin: 20px 13.5px;
+    margin: 20px 0px 20px 0px;
   }
   .contenido {
     max-width: 80%;
@@ -464,7 +549,19 @@ img {
     align-items: center;
   }
   .nosotrosNombre {
-    font-size: 10vh;
+    font-size: 160%;
+  }
+  .d-flex h4 {
+    font-size: 140%;
+  }
+  .btn-wsp {
+    width: 8vh;
+    height: 8vh;
+    right: 2%;
+    bottom: 6vh;
+  }
+  .prodImg {
+    width: 50vh;
   }
 }
 

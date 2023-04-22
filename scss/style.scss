@@ -8,13 +8,18 @@
 @import "video";
 @import "nosotros";
 @import "productos";
+@import "whatsapp";
+@import "banner";
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bebas+Neue&family=Michroma&family=Orbitron:wght@600;700;900&display=swap');
 
 @media(max-width:768px){
+    .menu{
+        width: 50%;
+    }
     .publicidad1{
-        width: 97%;
-        margin-left: 1px;
+        width: 100%;
+        margin-left: 0px;
     }
     .perritosol{
         width: fit-content;
@@ -46,12 +51,15 @@
         width: auto;
         background-color:rgb(69, 68, 68);
         color: rgb(179, 193, 207);
-        margin: 20px;
+        margin: 0px;
         padding: 10px;
         gap: 30px;
         letter-spacing: 2px;
         text-align: center;
        
+    }
+    .footerContainer{
+        margin: auto;
     }
 
     .center1{
@@ -60,6 +68,18 @@
     .container .insignia{
         width: auto;
        
+    }
+    .prodImg{
+        width: 60vh;
+    }
+    .banner{
+        height: 67vh;
+    }
+    .btn-wsp{
+        width: 12vh;
+        height: 12vh;
+        right: 2%;
+        bottom: 6vh;
     }
 }
 
@@ -99,12 +119,19 @@
         height: 10%;
     }
 }
+html,body{
+    overflow-x: hidden;
+}
 @media(max-width:480px){
+    .banner{
+        height: 20%;
+    }
     .publicidad1{
-        width: 95%;
+        width: 100%;
+        margin-left: 0px;
     }
     .publicidad1 a img{
-        margin: 20px 13.5px;
+        margin: 20px 0px 20px 0px;
     }
     .contenido{ 
         max-width: 80%;
@@ -185,9 +212,20 @@
         align-items: center;
     }
     .nosotrosNombre{
-        font-size: 10vh;
+        font-size: 160%;
     }
-       
+    .d-flex h4{
+        font-size: 140%;
+    }
+    .btn-wsp{
+        width: 8vh;
+        height: 8vh;
+        right: 2%;
+        bottom: 6vh;
+    }
+    .prodImg{
+        width: 50vh;
+    }
 }
 
 

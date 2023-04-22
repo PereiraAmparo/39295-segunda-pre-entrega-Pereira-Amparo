@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../multimedia/imagen/logo.jpg" type="image/x-icon">
     <title>Soluciones-Contactanos</title>
     <meta name="description" content="solicita tu préstamo ya a traves de whatsapp, facebook , instagram por mail o visitanos en nuestas oficinas">
     <meta name="keywords" content="préstamos, financiación, mipymes, sorteos, regalos, beneficios, servicio Odontológico, Uruguay">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="fondo">
@@ -23,7 +25,7 @@
            
                 <li><a href="./productos.html">Productos</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
-                <li> <a href="./contactos.html">Contáctanos</a></li>
+                <li> <a href="./contactos.html">Contactanos</a></li>
                 <li><a href="./novedades.html">Novedades</a></li>
                 
            </ul>
@@ -32,8 +34,8 @@
         <div class="portada">
             <h3>Contacta con Nosotros</h3>
         </div>
-        <div>
-            <img class="insignia"src="../multimedia/imagen/contactos.jpeg" alt="imagen de varias personas tomandose de las manos" >
+        <div >
+            <img data-aos="fade-left"data-aos-offset="500"data-aos-easing="ease-in-sine"class="banner" src="../multimedia/imagen/contactos.jpeg" alt="imagen de varias personas tomandose de las manos" >
 
         </div>
    </header> 
@@ -78,7 +80,9 @@
         
       </form>
    </div>
-   
+   <div>
+      <a class="btn-wsp" href="https://wa.me/59898223125"><img src="../multimedia/imagen/wsp.png" alt="boton de whatsapp" class="img-fluid " target="_blank"></a>
+    </div>
                 
    </main>
    <footer class="footer">
@@ -93,12 +97,18 @@
                   
           </div>
           <div class="redes">
-            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram" style="color:#edeff2"></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-square-facebook" style="color: #edeff2" ></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #eff1f6"></i></a>
+            <a href="https://www.instagram.com/solucionescoopaceuy" target="_blank"><i class="fa-brands fa-instagram" style="color:#edeff2"></i></a>
+            <a href="https://www.facebook.com/Cooperativa.Soluciones" target="_blank"><i class="fa-brands fa-square-facebook" style="color: #edeff2" ></i></a>
+            <a href="https://wa.me/59898223125" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #eff1f6"></i></a>
           </div>
       </div>
       </footer>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+     AOS.init({
+       once: true,
+     });
+   </script>
 </body>
 </html>
